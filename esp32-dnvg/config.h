@@ -36,7 +36,7 @@
 Config_t defConfig = {
   .rotation = 2,  // Rotation of display 0, 1, 2, 3
   .filter = 0,    // Filter   0 to 6 (0 - No Effect, 1 - Negative, 2 - Grayscale, 3 - Red Tint, 4 - Green Tint, 5 - Blue Tint, 6 - Sepia)
-  .wbV = 0        // 0 to 4 - if awb_gain enabled (0 - Auto, 1 - Sunny, 2 - Cloudy, 3 - Office, 4 - Home)
+  .wb = 0        // 0 to 4 - if awb_gain enabled (0 - Auto, 1 - Sunny, 2 - Cloudy, 3 - Office, 4 - Home)
 };
 
 /*    Menu stuff    */

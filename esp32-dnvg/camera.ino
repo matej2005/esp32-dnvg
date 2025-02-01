@@ -4,8 +4,6 @@
 TaskHandle_t Task1Cam_handle;  // Create handlerer for camera stream grabber
 camera_config_t configCam;
 
-
-
 void Task1code(void *pvParameters);
 
 void setupCamera() {
@@ -77,15 +75,15 @@ void Task1code(void *pvParameters) {
   //core0 loop
   for (;;) {
     if (!otaEn) {  //Check if ota is enabled and dont continue to save cpu
-      if (camSettingFlag) {
-        ESP_LOGI("cmer", "config updated: ");
+      if (camSettingsChangedFlag) {
+        ESP_LOGI("camera", "config updated: ");
         ESP_LOGI("camera", "Config.filter: %d", config.filter);
         ESP_LOGI("camera", "Config.wb: %d", config.wb);
 
         s->set_special_effect(s, (int)config.filter);
         //s->set_whitebal(s, config.wb);        // 0 = disable , 1 = enable
-        s->set_wb_mode(s, wb);  //  0 to 4 - if awb_gain enabled (0 - Auto, 1 - Sunny, 2 - Cloudy, 3 - Office, 4 - Home)
-        camSettingFlag = false;
+        s->set_wb_mode(s, config.wb);  //  0 to 4 - if awb_gain enabled (0 - Auto, 1 - Sunny, 2 - Cloudy, 3 - Office, 4 - Home)
+        camSettingsChangedFlag = false;
       }
       //take picture
       camera_fb_t *fb = NULL;
