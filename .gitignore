@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+
+# build
+build
+
+*.bk*
+aa.md
+
+esp32-dnvg/wifi.ino

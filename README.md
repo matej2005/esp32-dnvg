@@ -1,6 +1,17 @@
 
 
+# ESP32-DNVG
 
+Code for digital night vision based on esp32-cam dev board and GC9A01A TFT display
+
+Base code used from [Displaying Live Video from ESP32-CAM](https://hjwwalters.com/esp32-cam-gc9a01/) 
+
+Main feature from other codes for esp32 based nvg´s, is onscreen menu, controled by pushbutton
+
+## Use
+- single click scrooling
+- double click enter
+- hold exit
 
 
 ## Tested with
@@ -11,7 +22,25 @@
 
 
 
+## Parts i used
 
+| part    |   link    |
+|:-------:|:---------:|
+| display | [ali](https://www.aliexpress.com/item/1005004786844308.html)|
+| esp32   | [from local e-shop](https://www.laskakit.cz/esp32-cam-2-4ghz-wifi-bluetooth-modul_-ipex-antena/)|
+| lens    | [ali](https://www.aliexpress.com/item/32242183276.html)|
+
+
+## 3D printed files
+
+- [Bridge](https://www.printables.com/model/1109483-uf-nvg-based-on-pvs-69-alpha)
+
+- Housing from [discord](https://discord.gg/KSq6EumnWx) channel community-made-files from user xx‾ɹoʇʞɐɹʇ‾xx
+
+
+## Schematic
+
+![schematic](pics/schematic.png)
 
 
 ## Features
@@ -23,8 +52,7 @@
         - 0, 90, 180, 270
     - White balance
     - Restoring setings back
-    > [!NOTE]
-    > Setings are saved, when exiting from menu
+    - Setings are saved, when exiting from menu
     - FPS counter
     
   2. Some debug info on serial
