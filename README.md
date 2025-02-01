@@ -2,7 +2,17 @@
 
 # ESP32-DNVG
 
-digital night vision based on esp32-cam dev board and GC9A01A TFT display
+Code for digital night vision based on esp32-cam dev board and GC9A01A TFT display
+
+Base code used from [Displaying Live Video from ESP32-CAM](https://hjwwalters.com/esp32-cam-gc9a01/) 
+
+Main feature from other codes for esp32 based nvg´s, is onscreen menu, controled by pushbutton
+
+## Use
+- single click scrooling
+- double click enter
+- hold exit
+
 
 ## Tested with
 
@@ -23,9 +33,9 @@ digital night vision based on esp32-cam dev board and GC9A01A TFT display
 
 ## 3D printed files
 
-[brige](https://www.printables.com/model/1109483-uf-nvg-based-on-pvs-69-alpha)
+- [Bridge](https://www.printables.com/model/1109483-uf-nvg-based-on-pvs-69-alpha)
 
-Housing from [discord](https://discord.gg/KSq6EumnWx) channel community-made-files from user xx‾ɹoʇʞɐɹʇ‾xx
+- Housing from [discord](https://discord.gg/KSq6EumnWx) channel community-made-files from user xx‾ɹoʇʞɐɹʇ‾xx
 
 
 ## Schematic
