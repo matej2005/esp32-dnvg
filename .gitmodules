@@ -1,3 +1,6 @@
 [submodule "esp32-dnvg/lib/TFT_eFEX"]
 	path = esp32-dnvg/lib/TFT_eFEX
 	url = https://github.com/Bodmer/TFT_eFEX
+[submodule "esp32-dnvg/lib/TFT_eSPI"]
+	path = esp32-dnvg/lib/TFT_eSPI
+	url = https://github.com/Bodmer/TFT_eSPI
