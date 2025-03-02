@@ -1,6 +1,7 @@
 // Some settings
 
 
+
 #define UART_BAUD 115200
 
 /*    Camera configuration  */
@@ -9,10 +10,10 @@
 #define CAM_XCLK_FREQ_HZ 20000000
 #define CAM_FRAMESIZE FRAMESIZE_240X240
 #define CAM_PIXFORMAT PIXFORMAT_RGB565
-#define CAM_GRAP_MODE CAMERA_GRAB_LATEST  //option CAMERA_GRAB_WHEN_EMPTY
+#define CAM_GRAP_MODE CAMERA_GRAB_LATEST  // option CAMERA_GRAB_WHEN_EMPTY
 #define CAM_FB_LOCATION CAMERA_FB_IN_PSRAM
 #define CAM_JMEG_QUALITY 12
-#define CAM_FB_COUNT 2  //need more than 1 for latest grab
+#define CAM_FB_COUNT 2  // need more than 1 for latest grab
 
 // Camera pins
 #define PWDN_GPIO_NUM 32
@@ -47,7 +48,7 @@ Config_t defConfig = {
 /*    TESTING       */
 #define USE_MENU
 //#define USE_OTA      //Does not work properly
-#define USE_CLI
+//#define USE_CLI
 
 /*    OTA           */
 //#define SSID "ESP32-NODS"

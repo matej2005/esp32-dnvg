@@ -74,7 +74,7 @@ void Task1code(void *pvParameters) {
 
   //core0 loop
   for (;;) {
-    if (!otaEn) {  //Check if ota is enabled and dont continue to save cpu
+    if (cameraEnable) {  //Check if ota is enabled and dont continue to save cpu
       if (camSettingsChangedFlag) {
         ESP_LOGI("camera", "config updated: ");
         ESP_LOGI("camera", "Config.filter: %d", config.filter);
