@@ -31,13 +31,6 @@ Main feature from other codes for esp32 based nvg´s, is onscreen menu, controle
 | lens    | [ali](https://www.aliexpress.com/item/32242183276.html)|
 
 
-## 3D printed files
-
-- [Bridge](https://www.printables.com/model/1109483-uf-nvg-based-on-pvs-69-alpha)
-
-- Housing from [discord](https://discord.gg/KSq6EumnWx) channel community-made-files from user xx‾ɹoʇʞɐɹʇ‾xx
-
-
 ## Schematic
 
 ![schematic](pics/schematic.png)
